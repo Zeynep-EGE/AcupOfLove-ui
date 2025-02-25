@@ -8,3 +8,10 @@ btnActive.addEventListener('click', function(){
     }
 });
 
+const menuBtn = document.getElementById('#menu-btn');
+const btn = document.querySelector(".navbar div");
+
+// Hamburger menüsüne tıklandığında aktif sınıfını ekliyoruz
+    menuBtn.addEventListener("click", () => {
+    btn.classList.toggle("active"); // "active" sınıfını toggle yap
+});
